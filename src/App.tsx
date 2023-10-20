@@ -40,8 +40,7 @@ function App() {
         id="barColor" 
         value={barColor} 
         onChange={(e) => setBarColor(e.target.value)}
-        pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
-        placeholder="#0000FF" 
+        placeholder="#81007F "
         title="Please enter a valid HEX color code." />
     </div>
     

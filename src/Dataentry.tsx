@@ -33,7 +33,7 @@ const Dataentry: React.FC<Props> = ({ onFormSubmit }) => {
       <h3> You can choose whether you want to view the plot vertically
         (default) or horizontally</h3>
       <h3>Finally, enter the hexadecimal code of the bar color that you desire
-        (purple by default)
+        (purple by default), including #
       </h3>
       <form onSubmit={handleSubmit}>
         <input 
