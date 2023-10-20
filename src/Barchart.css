@@ -1,0 +1,19 @@
+.card {
+    background-color: aqua;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+div.card {
+    background-color: #CCCCFF;
+}
+
+.svg {
+    background-color: brown;
+}
