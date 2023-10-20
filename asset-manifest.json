@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TS-Plotting/static/css/main.a1437d7a.css",
+    "main.js": "/TS-Plotting/static/js/main.fa82868b.js",
+    "static/js/787.fdbe14ba.chunk.js": "/TS-Plotting/static/js/787.fdbe14ba.chunk.js",
+    "index.html": "/TS-Plotting/index.html",
+    "main.a1437d7a.css.map": "/TS-Plotting/static/css/main.a1437d7a.css.map",
+    "main.fa82868b.js.map": "/TS-Plotting/static/js/main.fa82868b.js.map",
+    "787.fdbe14ba.chunk.js.map": "/TS-Plotting/static/js/787.fdbe14ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1437d7a.css",
+    "static/js/main.fa82868b.js"
+  ]
+}
