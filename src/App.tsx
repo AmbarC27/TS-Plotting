@@ -5,29 +5,27 @@ import BarChart from './Barchart';
 
 type Direction = 'vertical' | 'horizontal';
 
-interface FormData {
+interface PlotData {
   numbers: number[];
   strings: string[];
-  // barColor: string; //
 }
 
 function App() {
   const [numbers, setNumbers] = useState<number[]>([]);
   const [strings, setStrings] = useState<string[]>([]);
   const [direction, setDirection] = useState<Direction>('vertical');
-  const [barColor, setBarColor] = useState<string>('#0F0F0F'); //
+  const [barColor, setBarColor] = useState<string>('#81007F');
   
 
-  const handleFormData = (data: FormData) => {
+  const handlePlotData = (data: PlotData) => {
     setNumbers(data.numbers);
     setStrings(data.strings);
-    // setBarColor(data.barColor)
   }
 
   return (
     <div className="App">
-    <h1>Hello</h1>
-    <Dataentry onFormSubmit={handleFormData}/>
+    <h1>Bar Plot</h1>
+    <Dataentry onFormSubmit={handlePlotData}/>
     
     <div className="dropdown-container">
         <select value={direction} onChange={(e) => setDirection(e.target.value as Direction)}>

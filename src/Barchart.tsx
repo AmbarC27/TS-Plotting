@@ -32,12 +32,13 @@ const BarChart: React.FC<Props> = ({ numbers, labels, direction, barColor }) => 
 
     return (
       <g key={index}>
-        {direction === 'vertical' && (
-          <rect x={barX} y={barY} width={BAR_WIDTH} height={barHeight} fill={barColor} />
-        )}
-        {direction === 'horizontal' && (
-          <rect x={0} y={barY} width={barHeight} height={BAR_WIDTH} fill={barColor} />
-        )}
+        {(() => {
+          if (direction === 'vertical') {
+            return <rect x={barX} y={barY} width={BAR_WIDTH} height={barHeight} fill={barColor} />;
+          } else if (direction === 'horizontal') {
+            return <rect x={0} y={barY} width={barHeight} height={BAR_WIDTH} fill={barColor} />;
+          }
+        })()}
         <text x={labelX} y={labelY} textAnchor="end" alignmentBaseline="middle" fontSize="12">
           {labels[index]}
         </text>
