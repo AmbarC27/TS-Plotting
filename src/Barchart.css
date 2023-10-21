@@ -13,3 +13,11 @@
 div.card {
     background-color: #CCCCFF;
 }
+
+.bar {
+    transition: fill 0.3s;
+  }
+
+  .bar:hover {
+    fill: #888888; /* This color is just for demonstration; adjust as needed */
+  }
